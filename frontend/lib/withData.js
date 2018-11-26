@@ -1,8 +1,7 @@
 import withApollo from "next-with-apollo";
 import ApolloClient from "apollo-boost";
 import { endpoint, prodEndpoint } from "../config";
-import { LOCAL_STATE_QUERY, TOGGLE_CART_MUTATION } from "../components/Cart";
-import { addCatchUndefinedToSchema } from "graphql-tools";
+import { LOCAL_STATE_QUERY } from "../components/Cart";
 
 function createClient({ headers }) {
   return new ApolloClient({
@@ -24,7 +23,7 @@ function createClient({ headers }) {
             });
 
             const data = {
-              data: {cartOpen: !cartOpen}
+              data: { cartOpen: !cartOpen }
             };
             cache.writeData(data);
             return data;

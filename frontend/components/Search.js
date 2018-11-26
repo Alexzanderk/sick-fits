@@ -42,7 +42,6 @@ class AutoComplete extends Component {
       query: SEARCH_ITEM_QUERY,
       variables: { searchTerm: e.target.value }
     });
-    console.log(res);
     this.setState({
       items: res.data.items,
       loading: false
