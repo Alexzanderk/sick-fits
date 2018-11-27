@@ -1,9 +1,9 @@
-# dotfiles
+# Sick-Fits
 
-Hey wes what settings do you use?
+### SPA project on React
 
-These are my config setting for various apps, editors and linters. I'd suggest not copying them directly but referencing what I have and what ones might make sense for you.
+Front-end side: React, Apollo Client,
 
-These are constantly changing as I work on different types of projects so I don't necessarily always have an answer to "y do u do ____ instead of ____" 
+Back-end side: Node.js, GraphQL Yoga, PRISMA
 
-Enjoy! 😘
+Testing: Jest
